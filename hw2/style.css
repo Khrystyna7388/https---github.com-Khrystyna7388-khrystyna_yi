@@ -1,0 +1,19 @@
+body{
+    text-align: justify;
+    border: 3px solid black;
+    margin: 30px 10px 30px 10px;
+    padding: 5px;
+    background: darkgrey;
+}
+.bord{
+    width: 300px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.line-h{
+    line-height: 25px;
+}
+.leftcol{
+    width: 110px;
+    vertical-align: top;
+}
