@@ -1,11 +1,13 @@
-.back{
+html{
     background: url(img/backg.jpg);
 }
 body{
     border: 2px solid black;
     padding: 10px;
+    background-clip: padding-box;
     margin-left: 100px;
     margin-right: 100px;
+    background: lightblue;
 }
 div{
     display: inline-flex;
@@ -23,3 +25,4 @@ p{
 h1{
     color: blue;
 }
+
