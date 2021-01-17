@@ -1,0 +1,48 @@
+html{
+    background-image: url(img/background.jpg);
+}
+body{
+    border: 1px;
+    margin: 80px;
+}
+#header{
+    float: none;
+    background: lavender;
+    border: 1px solid black;
+    margin: 5px;
+    height: 200px;
+    text-align: center;
+}
+#menu{
+    float: left;
+    background: lavender;
+    border: 1px solid black;
+    width: 300px;
+    height: 540px;
+    margin: 5px;
+}
+.post{
+    float: right;
+    background: lavender;
+    border: 1px solid black;
+    width: 850px;
+    height: 255px;
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+}
+#footer{
+    clear: both;
+    float: none;
+    background: lavender;
+    border: 1px solid black;
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+}
+img{
+    float: right;
+    width: 300px;
+    height: 250px;
+    margin-left: 10px;
+}
