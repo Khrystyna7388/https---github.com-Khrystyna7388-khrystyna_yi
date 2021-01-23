@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: white;
+}
+
+body {
+    background: gray;
+    border: 1px solid black;
+    margin: 15px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.top-header {
+    border: 1px solid black;
+    background: wheat;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.top-nav {
+    border: 1px solid black;
+    background: white;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.middle {
+    display: flex;
+    row-gap: 5px;
+    margin-top: 5px;
+}
+
+.section-left,
+.section-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.section-left {
+    width: 30%;
+    border: 1px solid black;
+    margin: 5px;
+    background: wheat;
+}
+.section-right{
+    width: 70%;
+    border: 1px solid black;
+    margin: 5px;
+    background: wheat;
+}
+.header-left{
+    border: 1px solid black;
+    margin: 5px 5px;
+    height: 50px;
+    background: white;
+}
+.nav-left{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: white;
+    height: 400px;  
+}
+.footer-left{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: white;
+    height: 50px;
+}
+.header-right{
+    border: 1px solid black;
+    margin: 5px;
+    height: 50px;
+    background: white;
+}
+.article-right{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: blanchedalmond;
+    height: 130px;
+}
+.article1-inside{
+    border: 1px solid black;
+    margin: 5px;
+    height: 20px;
+    background: white;
+}
+.article2-right{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: blanchedalmond;
+    height: 200px;
+}
+.p-aside{
+    display: flex;
+}
+.p-aside-p{
+    border: 1px solid black;
+    background: white;
+    width: 70%;
+    height: 100px;
+    margin: 5px;
+}
+.p-aside-aside{
+    border: 1px solid black;
+    background: white;
+    width: 30%;
+    height: 100px;
+    margin: 5px;
+}
+.footer-right{
+    border: 1px solid black;
+    margin: 5px;
+    height: 100px;
+    background: white;
+}
+.bottom{
+    border: 1px solid black;
+    height: 100px;
+    background: wheat;
+    margin: 5px;
+}
+
+
+
