@@ -1,65 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
-    /* display: flex; */
-    /* justify-content: center; */
     margin: 50px;
 }
-.wrap{
+
+.wrap {
     display: flex;
-    flex-wrap: wrap;
-    /* align-items: stretch; */
+    column-gap: 10px;
+    margin-top: 10px;
 }
+
 header {
     background: blue;
     height: 100px;
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-}
-/* .left{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-} */
-.hero{
-    /* display: inline-flex; */
-    background: plum;
-    width: 28%;
-    height: 200px;
-    margin-top: 8px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    /* justify-content: center;
-    align-items: center; */
-}
-.sidebar{
-    /* display: flex;
-    flex-direction: row; */
-    display: flex;
-    align-items: stretch;
-    background: chartreuse;
-    width: 28%;
-    height: 500px;
-    margin-right: 8px;
-    /*justify-content: center;
-    align-items: center; */
-}
-/* .right{
-    display: flex;
-    flex-direction: column;
-} */
-.main-content{
-    /* display: inline-flex; */
-    background: yellow;
-    width: 70%;
-    height: 500px;
-    margin-top: 8px;    
-    margin-bottom: 8px;
-    /* justify-content: center;
-    align-items: center; */
 }
 
+.hero {
+    background: plum;
+    height: 200px;
+}
+
+.sidebar {
+    background: chartreuse;
+    height: 500px;
+}
+
+.main-content {
+    background: yellow;
+    height: 500px;
+}
+
+.extra-content {
+    background: gray;
+    height: 200px;
+}
+
+.related-images {
+    background: green;
+    height: 200px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.related-posts {
+    background: hotpink;
+    height: 200px;
+    width: 30%;
+}
+
+.xxx,
+.yyy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.xxx {
+    width: 35%;
+}
+
+.yyy {
+    width: 65%;
+}
+
+.zzz {
+    display: flex;
+    margin-top: 10px;
+}
+.footer{
+    background: orange;
+    height: 200px;
+    margin-top: 10px;
+}
