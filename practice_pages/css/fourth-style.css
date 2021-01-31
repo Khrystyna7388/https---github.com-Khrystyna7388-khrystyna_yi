@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    border-bottom: 2px solid #C4C4C4;
+}
+
+.gray {
+    width: 70%;
+    height: 700px;
+    background-color: #F2F5F1;
+    position: absolute;
+    top: 25%;
+}
+
+.gray h1 {
+    position: absolute;
+    top: -8%;
+    left: 20%;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 96px;
+    color: #000000;
+}
+
+.name input {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 505px;
+    height: 54px;
+    border: 1px solid #C4C4C4;
+
+}
+
+.email input {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 505px;
+    height: 54px;
+    border: 1px solid #30ABAE;
+}
+
+.smth input {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 505px;
+    height: 186px;
+    border: 1px solid #C4C4C4;
+}
+
+button {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    width: 295px;
+    height: 55.5px;
+    background: #30ABAE;
+    border-radius: 3px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+::placeholder {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C4C4C4;
+    padding-left: 10px;
+}
+footer{
+    height: 100px;
+    background-color: #16595A;
+    margin-top: 800px;
+}
