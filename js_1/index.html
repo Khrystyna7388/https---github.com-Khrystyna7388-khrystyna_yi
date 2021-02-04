@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // -присвоить каждому из следующих значений свою переменную: 'hello', 'owu', 'com', 'ua', 1, 10, -999, 123, 3.14,
+        //     2.7, 16, true, false Вывести каждую при помощи console.log, alert, document.write
+        //
+        // let hello = "hello";
+        // console.log(hello);
+        // alert(hello);
+        // document.write(hello);
+        // let owu = "owu";
+        // console.log(owu);
+        // alert(owu);
+        // document.write(owu);
+        // let com = "com";
+        // console.log(com);
+        // alert(com);
+        // document.write(com);
+        // let ua = "ua";
+        // console.log(ua);
+        // alert(ua);
+        // document.write(ua);
+        // let n1 = 1;
+        // console.log(n1);
+        // alert(n1);
+        // document.write(n1);
+        // let n2 = 10;
+        // console.log(n2);
+        // alert(n2);
+        // document.write(n2);
+        // let n3 = -999;
+        // console.log(n3);
+        // alert(n3);
+        // document.write(n3);
+        // let n4 = 123;
+        // console.log(n4);
+        // alert(n4);
+        // document.write(n4);
+        // let n5 = 3.14;
+        // console.log(n5);
+        // alert(n5);
+        // document.write(n5);
+        // let n6 = 2.7;
+        // console.log(n6);
+        // alert(n6);
+        // document.write(n6);
+        // let n7 = 16;
+        // console.log(n7);
+        // alert(n7);
+        // document.write(n7);
+
+        // -
+        // переопределить каждую переменную из задания 1 дав им произвольные значения Вывести каждую при помощи console
+        //     .log, alert, document.write
+        //
+        // hello = "hi";
+        // console.log(hello);
+        // alert(hello);
+        // document.write(hello);
+        // owu = "owuuu";
+        // console.log(owu);
+        // alert(owu);
+        // document.write(owu);
+        // com = "commit";
+        // console.log(com);
+        // alert(com);
+        // document.write(com);
+        // ua = "com";
+        // console.log(ua);
+        // alert(ua);
+        // document.write(ua);
+        // n1 = 6;
+        // console.log(n1);
+        // alert(n1);
+        // document.write(n1);
+        // n2 = 89;
+        // console.log(n2);
+        // alert(n2);
+        // document.write(n2);
+        // n3 = -9;
+        // console.log(n3);
+        // alert(n3);
+        // document.write(n3);
+        // n4 = 12;
+        // console.log(n4);
+        // alert(n4);
+        // document.write(n4);
+        // n5 = 3.146;
+        // console.log(n5);
+        // alert(n5);
+        // document.write(n5);
+        // n6 = 2.799866;
+        // console.log(n6);
+        // alert(n6);
+        // document.write(n6);
+        // n7 = 875;
+        // console.log(n7);
+        // alert(n7);
+        // document.write(n7);
+
+        // - Создать 3 числовых и 3 стринговых константы. Вывести каждую при помощи console.log , alert, document.write
+        //
+        // const num1 = 25;
+        // console.log(num1);
+        // alert(num1);
+        // document.write(num1);
+        // const num2 = 78;
+        // console.log(num2);
+        // alert(num2);
+        // document.write(num2);
+        // const num3 = 65543;
+        // console.log(num3);
+        // alert(num3);
+        // document.write(num3);
+        // const st1 = 'string1';
+        // console.log(st1);
+        // alert(st1);
+        // document.write(st1);
+        // const st2 = 'string2';
+        // console.log(st2);
+        // alert(st2);
+        // document.write(st2);
+        // const st3 = 'string3';
+        // console.log(st3);
+        // alert(st3);
+        // document.write(st3);
+
+        // -при помощи 3 х разных prompt() получить 3 слова которые являются вашими ФИО
+        //     .Для фамилии имени и отчества создать разные переменные.Вывести каждую при помощи console.log, alert,
+        //     document.write
+        //
+        // let prm1 = prompt("Прізвище");
+        // let prm2 = prompt("Ім'я");
+        // let prm3 = prompt("По батькові");
+        // console.log(prm1 + " " + prm2 + " " + prm3);
+        // alert(prm1 + " " + prm2 + " " + prm3);
+        // document.write(prm1 + " " + prm2 + " " + prm3);
+
+        // - Взять переменные из задания 4 и сконкатенировать их в одной переменной person.
+        //
+        // const person = prm1 + " " + prm1 + " " + prm3;
+        // console.log(person);
+        //
+
+        // - при помощи prompt() получить 3 числа. Привести их к числовому типу при помощи +. вывести их в консоль.и.
+        //
+        // const num1 = +prompt("enter first number");
+        // const num2 = +prompt("enter second number");
+        // const num3 = +prompt("enter third number");
+        // const res = num1 + num2 + num3;
+        // console.log(res);
+
+        // -при помощи prompt() получить 4 числа.Привести их к числовому типу при помощи parseInt
+        //     .Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+        //
+        // const n1 = prompt("enter first number");
+        // const n2 = prompt("enter second number");
+        // const n3 = prompt("enter third number");
+        // const n4 = prompt("enter fourth number");
+        // const q1 =  parseInt(n1);
+        // const q2 =  parseInt(n2);
+        // const q3 =  parseInt(n3);
+        // const q4 =  parseInt(n4);
+        // const result = q1 + q2 + q3 + q4;
+        // console.log(result);
+
+        // -при помощи prompt() получить 3 числа с плавающей точекой
+        //     .при помощи parseFloat привести их к соответсвующему типу
+        //     .Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+        //
+        // const f1 = prompt("enter fisrt number");
+        // const f2  = prompt("enter second number");
+        // const f3 = prompt("enter third number");
+        // const par1 = parseFloat(f1);
+        // const par2 = parseFloat(f2);
+        // const par3 = parseFloat(f3);
+        // const result = par1 + par2 + par3;
+        // console.log(result);
+
+        // -при помощи prompt() получить 3 числа с плавающей точекой.Округлить их при помощи Math
+        //     .round Сложить их между собой записав результат в переменную и вывести в консоль браузера
+        //
+        // const f1 = Math.round(+prompt("enter fisrt number"));
+        // const f2 = Math.round(+prompt("enter second number"));
+        // const f3 = Math.round(+prompt("enter third number"));
+        // console.log(f1 + f2 + f3);
+
+        // -при помощи prompt() получить 2 целых числа.Привести их к целочисленному типу.Первое число -
+        //     это число которое будут возводить в степень.Второе число - это число которое является степенью
+        //     .При помощи Math.pow возвести первое число в степень второго числа.
+        //
+        // const num1 = +prompt("enter first number");
+        // const num2 = +prompt("enter second number");
+        // const res = Math.pow(num1, num2);
+        // console.log(res);
+
+        // -При помощи оператора опредеоения типа typeof определить типы следующих переменных и вывести их в консоль
+        // let a = 100;
+        // let b = '100';
+        // let c = true;
+        // let d = undefined;
+        //
+        // console.log(typeof a);
+        // console.log(typeof b);
+        // console.log(typeof c);
+        // console.log(typeof d);
+
+        // -Поставьте соответствующий оператор в выражениях что бы получился соответсвующий результат.
+        // В одинаковых выражениях в задании не использовать два одинаковых оператора.
+        // Каждое выражение вложить в свою переменную
+        // 5 ? 6 - > true
+        // 5 ? 6 - > false
+        // 5 ? 6 - > false
+        // 5 ? 6 - > false
+        // 10 ? 10 - > true
+        // 10 ? 10 - > true
+        // 10 ? 10 - > false
+        // 10 ? 10 - > false
+        // 10 ? 10 - > false
+        // 123 ? '123' - > false
+        // 123 ? '123' - > true
+        //
+        // const a1 = 5 < 6;
+        // console.log(a1);
+        // const a2 = 5 > 6;
+        // console.log(a2);
+        // const a3 = 5 == 6;
+        // console.log(a3);
+        // const a4 = 5 === 6;
+        // console.log(a4);
+        // const a5 = 10 == 10;
+        // console.log(a5);
+        // const a6 = 10 >= 10;
+        // console.log(a6);
+        // const a7 = 10 > 10;
+        // console.log(a7);
+        // const a8 = 10 < 10;
+        // console.log(a8);
+        // const a9 = 10 !== 10;
+        // console.log(a9);
+        // const a10 = 123 === '123';
+        // console.log(a10);
+        // const a11 = 123 == '123';
+        // console.log(a11);
+
+        // 1.Определите переменные str, num, flag и txt со значениями «Привет», 123, true, «true».
+        // При помощи оператора typeof убедитесь, что значения переменных принадлежат типам: string, number и boolean.
+        //
+        // let str = 'Привет';
+        // console.log(typeof str);
+        // let num = 123;
+        // console.log(typeof num);
+        // var flag = true;
+        // console.log(typeof flag);
+        // let txt = 'true';
+        // console.log(typeof txt);
+
+
+        // 2. Создайте переменные a1, a2, a3, a4, a5.При помощи математических операторов(сложение, вычитание и т.д
+        //     .) найдите значения выражений:
+        //     5 + 3,
+        //     5 - 3,
+        //     5 * 3,
+        //     5 / 3,
+        //     5 % 3
+        // поместив результат каждого выражения в соответствующую переменную.Например,
+        //     let a1 = 5 + 3.
+        //
+        // let a1 = 5 + 3;
+        // console.log(a1);
+        // let a2 = 5 - 3;
+        // console.log(a2);
+        // let a3 = 5 * 3;
+        // console.log(a3);
+        // let a4 = 5 / 3;
+        // console.log(a4);
+        // let a5 = 5 % 3;
+        // console.log(a5);
+
+        // 3.  Создайте переменные a6, a7, a8, a9, a10. Поместите в них результат выражений:
+        // 5 % 3,
+        //     3 % 5,
+        //     5 + '3',
+        //     '5' - 3,
+        //     75 + 'кг'
+        //
+        // let a6 = 5 % 3;
+        // console.log(a6);
+        // let a7 = 3 % 5;
+        // console.log(a7);
+        // let a8 = 5 + '3';
+        // console.log(a8);
+        // let a9 = '5' - 3;
+        // console.log(a9);
+        // let a10 = 75 + 'кг';
+        // console.log(a10);
+
+        // 4. Напишите код, который находит площадь прямоугольника высота 23см. ( переменная height),
+        // шириной 10 см(переменная width), значение площади должно хранится в числовой переменной s.
+        //
+        // var height = 23;
+        // var width = 10;
+        // s = height * width;
+        // console.log('Площа прямокутника = ' + s + ' см');
+
+        // 5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
+        // результат поместите в переменную v.
+        //
+        // var heightC = 10;
+        // var dC = 4;
+        // var v = 3.14 * Math.pow(dC / 2, 2) * heightC;
+        // console.log(v);
+
+        // 6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
+        // Найдите гипотенузу k по теореме Пифагора(нужно использовать функцию Math.pow(число,
+        //     степень) или оператор возведения в степень ** ).
+        //
+        // var n = 3;
+        // var m = 4;
+        // var k = Math.sqrt(Math.pow(n, 2) + Math.pow(n, 2));
+        // console.log(k);
+
+        // 7. Напишите скрипт, который выводит "Hello world", создавши переменную str и выводить спомощью document.write,
+        //     alert и console.log
+        // let str = 'Hello world';
+        // document.write(str);
+        // console.log(str);
+        // window.alert(str);
+
+        // 8. Вывести в окно браузера при помощи метода alert() следующие данные: Ваше ФИО, возраст, хобби(
+        //     каждой на новой строки спомощью\ n).
+        // alert('Їжак Христина Андріївна\n' + '22\n' + 'музика');
+
+        // 9. Создать 4 переменные с использованием ключевого слова
+        // let с именами str1, str2, str3, concatenation.
+        // Переменной str1 присвоить фразу‘ Кто‘, str2–‘ ты‘, str3–‘ такой ? ’
+        //     Локальной переменной concatenation присвоить результат конкатенации 3 - х строк : str1, str2, str3.
+        // Вывести в документ содержимое переменной concatenation спомощью document.write
+        // let str1 = 'Кто ';
+        // let str2 = 'ты';
+        // let str3 = ' такой ?';
+        // let concatenation = str1 + str2 + str3;
+        // document.write(concatenation);
+
+        // 10. Какие значения выведет в окно браузера следующий фрагмент кода ? и почему ?
+        //     let str = "20";
+        //  let a = 5;
+        // let b = "<br/>";
+        // document.write(str + a + b);
+        // document.write(str - a + "<br/>");
+        // document.write(str * "2" + "<br/>");
+        // document.write(str / 2 + "<br/>");
+
+        // 11. Какие значения выведет в окно консоли следующий фрагмент кода если его поместить в console.log?
+        // console.log(parseInt("3.14"));
+        // console.log(parseInt("-7.875"));
+        // console.log(parseInt("435"));
+        // console.log(parseInt("Вася"));
+
+        // 12. С помощью окна ввода, вызываемого методом prompt, пользователь может ввести данные,
+        // которые будут использоваться далее, повторите код ниже
+        // let str = prompt("Enter something", "ho-ho");
+        // console.log(str);
+
+        // 13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел,
+        // а вывод результата при помощи метода alert
+        //
+        // let prompt1 = prompt("Enter fisrt number");
+        // let prompt2 = prompt("Enter second number");
+        // alert(prompt1 + prompt2);
+
+        // 14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя,
+        // фамилию и возраст, а вам не обходимо вывести строку такого вида
+        // Доброго вечера Иван Иванов, мои поздравления что вам 32, а вывод результата при помощи метода alert
+        //
+        // let p1 = prompt("Enter name");
+        // let p2 = prompt("Enter surname");
+        // let p3 = prompt("Enter age");
+        // alert("Доброго вечора, " + p1 + " " + p2 + ", мої вітання, що вам " + p3)
+        // var q = 2;
+        // q = 3;
+        // alert(q);
+
+
+        // 1. Три різних числа вводяться через prompt().
+        // За допомоги
+        // if
+        // else вивести іх в порядку зростання.(відсортувати по зростанню)
+        //
+        // const num1 = +prompt("enter first number");
+        // const num2 = +prompt("enter second number");
+        // const num3 = +prompt("enter third number");
+        // if (num1 < num2 && num2 < num3){
+        //     console.log(num1 + " " + num2 + " " + num3);
+        // } else if (num2 < num1 && num1 < num3){
+        //     console.log(num2 + " " + num1 + " " + num3);
+        // } else if(num3 < num2 && num2 < num1) {
+        //     console.log(num3 + " " + num2 + " " + num1);
+        // } else if (num1 < num3 && num3 < num2){
+        //     console.log(num1 + " " + num3 + " " + num2);
+        // } else if (num2 < num3 && num3 < num1){
+        //     console.log(num2 + " " + num3 + " " + num1);
+        // } else {
+        //     console.log(num3 + " " + num1 + " " + num2);
+        // }
+
+        // 2.
+        // Все параматры получаем с клавиатуры!!!!
+        //     Имитируем поведение пешехода на перекстке.
+        // Если светофор зеленый - вывести "иди".
+        // Если светофор желтый - вывести "подожди".
+        // Если светофор красный - вывести "стой".
+        // Если светофор в аварийном режиме вывести "делай что хочешь"!
+        //
+        // const str = prompt("enter the color at a trafic light");
+        // if(str === 'green'){
+        //     console.log('go');
+        // } else if (str === 'yellow'){
+        //     console.log('wait');
+        // } else if(str === 'red'){
+        //     console.log('stop');
+        // } else{
+        //     console.log('up to you');
+        // }
+
+        // 3
+        // Все параметры получаем с клавиатуры!!!!(prompt, confirm)
+        // Создать переменную isRoadClear которая характеризирует наличие на дороге машин.
+        // Улучшаем предыдущее задание.
+        // Если светофор зеленый и машин нет - вывести "иди".
+        // Если светофор зеленый и машины есть - вывести подожди пока нарушители проедут ".
+        // Если светофор желтый и машины есть - вывести "жди".
+        // Если светофор желтый и машин нет - вывести "все рано жди".
+        // Если светофор красный и машин нет - вывести "стой все рано".
+        // Если светофор красный - и машины есть вывести "стой и жди".
+        // Если светофор в аварийном режиме вывести "делай что хочешь"!
+        //
+        
+
+
+    </script>
+    <!-- <script src=""></script> -->
+</body>
+
+</html>
