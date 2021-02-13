@@ -309,7 +309,7 @@
 //     console.log(jsonCarss);
 // }
 //
-//       NEW
+//       NEW 
 //
 //
 //- Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом.
@@ -718,10 +718,21 @@
 // document.body.appendChild(tr);
 //
 //- за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
-const tr = document.createElement('tr');
+// const tr = document.createElement('tr');
+// for (let i = 0; i < 10; i++) {
+//     const td = document.createElement('td');
+//     tr.appendChild(td);
+// }
+// document.body.appendChild(tr);
+//
+//- за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
 for (let i = 0; i < 10; i++) {
-    const td = document.createElement('td');
-    tr.appendChild(td);
+    let tr = document.createElement('tr');
+    for (let j = 0; j < 5; j++) {
+        let th = document.createElement('th');
+        tr.appendChild(th);
+    }   
+    document.body.appendChild(tr);
 }
-document.body.appendChild(tr);
+
 
