@@ -577,7 +577,7 @@
 //     divStatus.innerText = `${user.status}`;
 //     div.appendChild(divStatus);
 //
-// divAddress.innerText = `${user.address}`;                  [object Object]
+// divAddress.innerText = `${user.address}`;                  [object Object] -вивід.  як правильно зробити?  
 //
 //     div.appendChild(divAddress);
 //     divAddressCity.innerText = `${user.address.city}`;
