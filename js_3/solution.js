@@ -672,7 +672,7 @@
 // for (const iterator of byClass) {
 //     console.log(iterator);
 // }
-    
+
 // const byTag = document.getElementsByTagName('p');
 // console.log(byTag);
 //
@@ -705,34 +705,205 @@
 //     iterator.style.width = '300px';
 //     iterator.style.height = '200px';
 // }
+//                        
+//
+//                                               UPDATED
+//
 //
 //- за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+// const table = document.createElement('table');
 // const tr = document.createElement('tr');
-// tr.style.height = '200px';
-// tr.style.width = '300px';                   чому на сторінці в елементах я бачу створену таблицю,
-// tr.style.border = '1px solid black'                  але стилі не працюють?
+// table.appendChild(tr);    
+// tr.style.border = '1px solid black';                 
 // for (let i = 0; i < 3; i++) {
 // const td = document.createElement('td');
 // tr.appendChild(td);
+// td.style.border = '1px solid black';
+// td.style.height = '200px';
+// td.style.width = '300px';
 // }
-// document.body.appendChild(tr);
+// document.body.appendChild(table);
 //
 //- за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
-// const tr = document.createElement('tr');
+// const table = document.createElement('table');
 // for (let i = 0; i < 10; i++) {
-//     const td = document.createElement('td');
-//     tr.appendChild(td);
+//     const tr = document.createElement('tr');
+//     table.appendChild(tr);
+//     for (let i = 0; i < 3; i++) {
+//         const td = document.createElement('td');
+//         tr.appendChild(td);
+//         td.style.border = '1px solid black';
+//         td.style.height = '100px';
+//         td.style.width = '200px';
+//     }
 // }
-// document.body.appendChild(tr);
+// document.body.appendChild(table);
 //
 //- за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
-for (let i = 0; i < 10; i++) {
-    let tr = document.createElement('tr');
-    for (let j = 0; j < 5; j++) {
-        let th = document.createElement('th');
-        tr.appendChild(th);
-    }   
-    document.body.appendChild(tr);
-}
+// const table = document.createElement('table');
+// for (let i = 0; i < 10; i++) {
+//     const tr = document.createElement('tr');
+//     table.appendChild(tr);
+//     for (let j = 0; j < 5; j++) {
+//         const td = document.createElement('td');
+//         tr.appendChild(td);
+//         td.style.border = '1px solid black';
+//         td.style.width = '300px';
+//         td.style.height = '50px';
+//     }
+// }
+// document.body.appendChild(table);
+//
+//- за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені.
+// n та m отримати з prompt
+// let n = +prompt('Input a number');
+// let m = +prompt('Input another number');
+// const table = document.createElement('table');
+// for (let i = 0; i < n; i++) {
+//     const tr = document.createElement('tr');
+//     table.appendChild(tr);
+//     for (let i = 0; i < m; i++) {
+//         const td = document.createElement('td');
+//         tr.appendChild(td);
+//         td.style.border = '1px solid black';
+//         td.style.width = '200px';
+//         td.style.height = '50px';
+//     }
+// }
+// document.body.appendChild(table);
 
+// --Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. 
+//У файлі прописати наступні доступи та дії
+//  - знайти всі елементі, які мають class
+//  - знайти всі параграфи ,та змінити текст на hello oktenweb!
+//  - знайти всі div та змінити ім колір на червоний
+// const byClass = document.getElementsByClassName('line-h');          
+// for (const iterator of byClass) {
+//     console.log(iterator);                                        
+// }
+// const byClass = document.getElementsByClassName('bord');
+// for (const iterator of byClass) {
+//     console.log(iterator);
+// }
+//
+//- знайти всі параграфи ,та змінити текст на hello oktenweb!
+// const text = 'hello oktenweb';
+// const byTag = document.getElementsByTagName('p');
+// for (const iterator of byTag) {
+//     iterator.innerText = text;
+// }
+//
+//- знайти всі div та змінити ім колір на червоний
+// const byTag = document.getElementsByTagName('div');
+// for (const iterator of byTag) {
+//     iterator.style.background = 'red';
+// }
+//
+//*** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users.
+// За допомогою document.createElement вивести їх в браузер.
+// Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт в свій блок (блок в блоці).
+// fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(respons => respons.json())
+//     .then(users => {
+//         const mainDiv = document.createElement('div');
+//         for (const user of users) {
+//             console.log(user);
+//             const div = document.createElement('div');
+//             div.innerText = `${user.id} ${user.name} ${user.username} ${user.email} ${user.phone} ${user.website}`
+//             mainDiv.appendChild(div);
+//             const divAddress = document.createElement('div');
+//             divAddress.innerText = `${user.address.street} ${user.address.suite} ${user.address.city} ${user.address.zipcode}`
+//             div.appendChild(divAddress);
+//             const divGeo = document.createElement('div');
+//             divGeo.innerText = `${user.address.geo.lat} ${user.address.geo.lng}`;
+//             divAddress.appendChild(divGeo);
+//             const divCompany = document.createElement('div');
+//             divCompany.innerText = `${user.company.name} ${user.company.catchPhrase} ${user.company.bs}`
+//         }
 
+//         document.body.appendChild(mainDiv);
+//     });
+//
+//*** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts.
+// За допомогою document.createElement вивести їх в браузер.
+// Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+// fetch("https://jsonplaceholder.typicode.com/posts")
+// .then(respons => respons.json())
+// .then(posts => {
+//     const div = document.createElement('div');
+//     for (const post of posts) {
+//         const divUserId = document.createElement('div');
+//         divUserId.innerText = `${post.userId}`;
+//         div.appendChild(divUserId);
+//         const divId = document.createElement('div');
+//         divId.innerText = `${post.id}`;
+//         div.appendChild(divId);
+//         const divTitle = document.createElement('div');
+//         divTitle.innerText = `${post.title}`;
+//         div.appendChild(divTitle);
+//         const divBody = document.createElement('div');
+//         divBody.innerText = `${post.body}`;
+//         div.appendChild(divBody);
+//     }
+//     document.body.appendChild(div);
+// });
+//
+//*** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments.
+// За допомогою document.createElement вивести їх в браузер.
+// Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+// fetch("https://jsonplaceholder.typicode.com/comments")
+// .then(respons => respons.json())
+// .then(comments => {
+//     const div = document.createElement('div');
+//     for (const comment of comments) {
+//         const divPostId = document.createElement('div');
+//         divPostId.innerText = `${comment.postId}`;
+//         div.appendChild(divPostId);
+//         const divId = document.createElement('div');
+//         divId.innerText = `${comment.id}`;
+//         div.appendChild(divId);
+//         const divName = document.createElement('div');
+//         divName.innerText = `${comment.name}`;
+//         div.appendChild(divName);
+//         const divEmail = document.createElement('div');
+//         divEmail.innerText = `${comment.email}`;
+//         div.appendChild(divEmail);
+//         const divBody = document.createElement('div');
+//         divBody.innerText = `${comment.body}`;
+//         div.appendChild(divBody);
+//     }
+//     document.body.appendChild(div);
+// });
+//
+//****** при помощи fetch (как в примере) получить от jsonplaceholder все posts.
+// Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments.
+// Объеденить соответсвующий post с соответсвующими comment и вывести в браузер.
+// Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
+fetch("https://jsonplaceholder.typicode.com/posts")
+    .then(respons => respons.json())
+    .then(posts => {
+        fetch("https://jsonplaceholder.typicode.com/comments")
+            .then(resp => resp.json())
+            .then(comments => {
+                const div = document.createElement('div');
+                for (const post of posts) {
+                    for (const comment of comments) {
+                        if (post.id === comment.postId) {
+                            const divUserId = document.createElement('div');
+                            divUserId.innerText = `${post.userId}`;
+                            div.appendChild(divUserId);
+                            const divPostId = document.createElement('div');
+                            divPostId.innerText = `${post.id} ${comment.postId} ${comment.id} ${comment.name} ${comment.email} ${comment.body}`;
+                            div.appendChild(divPostId);
+                            const divTitle = document.createElement('div');
+                            divTitle.innerText = `${post.title}`;
+                            div.appendChild(divTitle);
+                            const divBody = document.createElement('div');
+                            divBody.innerText = `${post.body}`;
+                            div.appendChild(divBody);
+                        }
+                    }
+                }
+                document.body.appendChild(div);
+            });
+    });
