@@ -879,31 +879,33 @@
 // Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments.
 // Объеденить соответсвующий post с соответсвующими comment и вывести в браузер.
 // Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
-fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(respons => respons.json())
-    .then(posts => {
-        fetch("https://jsonplaceholder.typicode.com/comments")
-            .then(resp => resp.json())
-            .then(comments => {
-                const div = document.createElement('div');
-                for (const post of posts) {
-                    for (const comment of comments) {
-                        if (post.id === comment.postId) {
-                            const divUserId = document.createElement('div');
-                            divUserId.innerText = `${post.userId}`;
-                            div.appendChild(divUserId);
-                            const divPostId = document.createElement('div');
-                            divPostId.innerText = `${post.id} ${comment.postId} ${comment.id} ${comment.name} ${comment.email} ${comment.body}`;
-                            div.appendChild(divPostId);
-                            const divTitle = document.createElement('div');
-                            divTitle.innerText = `${post.title}`;
-                            div.appendChild(divTitle);
-                            const divBody = document.createElement('div');
-                            divBody.innerText = `${post.body}`;
-                            div.appendChild(divBody);
-                        }
-                    }
-                }
-                document.body.appendChild(div);
-            });
-    });
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//     .then(respons => respons.json())
+//     .then(posts => {
+//         fetch("https://jsonplaceholder.typicode.com/comments")
+//             .then(resp => resp.json())
+//             .then(comments => {
+//                 const div = document.createElement('div');
+//                 for (const post of posts) {
+//                     for (const comment of comments) {
+//                         if (post.id === comment.postId) {
+//                             const divUserId = document.createElement('div');
+//                             divUserId.innerText = `${post.userId}`;
+//                             div.appendChild(divUserId);
+//                             const divPostId = document.createElement('div');
+//                             divPostId.innerText = `${post.id} ${comment.postId} ${comment.id} ${comment.name} ${comment.email} ${comment.body}`;
+//                             div.appendChild(divPostId);
+//                             const divTitle = document.createElement('div');
+//                             divTitle.innerText = `${post.title}`;
+//                             div.appendChild(divTitle);
+//                             const divBody = document.createElement('div');
+//                             divBody.innerText = `${post.body}`;
+//                             div.appendChild(divBody);
+//                         }
+//                     }
+//                 }
+//                 document.body.appendChild(div);
+//             });
+//     });
+//
+
