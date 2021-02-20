@@ -236,3 +236,108 @@
 // }
 //
 //- отримати весь список класів елемента з id=rules і вивести їх в console.log
+// let byId = document.getElementById('rules');
+// console.log(byId.classList);
+//
+//- отримати всі елементи з класом fc_rules
+// const byClass = document.getElementsByClassName('fc_rules');
+// for (const iterator of byClass) {
+//     console.log(iterator);
+// }
+//
+//- поміняти колір тексту у всіх елементів fc_rules на червоний
+// const byClass = document.getElementsByClassName('fc_rules');
+// for (const iterator of byClass) {
+//     iterator.style.background = 'red';
+// }
+//
+// Взяти файл template_2.html та працювати в ньому
+// - Напишіть код, який :
+// -- змінює колір тексту елемнту з ід main_header на будь-який інший
+// const byId = document.getElementById('main_header');
+// byId.style.background = 'orange';
+//
+//-- робить шириниу елементу ul 400 пікселів
+// const byTag = document.getElementsByTagName('ul');
+// for (const iterator of byTag) {
+//     iterator.style.width = '400px';
+//     iterator.style.background = 'red';
+// }
+//
+//-- робить шириниу всіх елементів з класом linkList шириною 50%
+// const byClass = document.getElementsByClassName('linkList');
+// for (const iterator of byClass) {
+//     iterator.style.width = '50%';
+//     iterator.style.background = 'red';
+// }
+//
+//-- отримує текст який зберігається в елементі з класом listElement2
+// const byClass = document.getElementsByClassName('listElement2');
+// for (const iterator of byClass) {
+//     console.log(iterator);
+// }
+//
+//-- отримує всі елементи li та змінює ім колір фону на сірий
+// const byTag = document.getElementsByTagName('li');
+// for (const iterator of byTag) {
+//     iterator.style.background = 'grey';
+// }
+//
+//-- отримує всі елементи 'a' та додає їм клас anchor
+// const byTag = document.getElementsByTagName('a');
+// for (const iterator of byTag) {
+//     iterator.classList.add('anchor');
+// }
+//
+//-- отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3,
+// змінює йому розмір тексту на 40 пікселів
+// const byTag = document.getElementsByTagName('a');
+// for (const iterator of byTag) {
+//     if(iterator.innerHTML === 'link3'){
+//         iterator.style.background = 'red';
+//         iterator.style.width = '40px';
+//     }
+// }
+//
+//-- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+// const byTag = document.getElementsByTagName('a');
+// for (const iterator of byTag) {
+//     iterator.classList.add(`element_${iterator.innerHTML}`);
+// }
+//
+//-- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+// const color = prompt('input your favorite color');
+// const byClass = document.getElementsByClassName('sub-header');
+// for (const iterator of byClass) {
+//     iterator.style.background = color;
+// }
+//
+//-- отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment .
+// Колір отримати з prompt()
+// const color = prompt('input your favorite color');
+// const byClass = document.getElementsByClassName('sub-header');
+// for (const iterator of byClass) {
+//     if (iterator.innerHTML === 'content 2 segment'){
+//         iterator.style.background = color;
+//     }
+// }
+//
+//-- отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+// const txt = prompt('some text');
+// const byClass = document.getElementsByClassName('content_1');
+// for (const iterator of byClass) {
+//     iterator.innerHTML = txt;
+// }
+//
+//-- отримати елементи p та змінити їм paddin на довільне значення
+// const byTag = document.getElementsByTagName('p');
+// for (const iterator of byTag) {
+//     iterator.style.padding = '100px';
+// }
+//
+//-- отримати елементи з класом text2 та змінити їм текст на довільне значення
+// const byClass = document.getElementsByClassName('text2');
+// for (const iterator of byClass) {
+//     iterator.innerHTML = 'text text text';
+// }
+
