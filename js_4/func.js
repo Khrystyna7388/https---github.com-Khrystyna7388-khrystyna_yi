@@ -364,14 +364,18 @@
 // function rules([...x]) {
 //     let array = [...x];
 //     const div = document.createElement('div');
-//     for (const rule of array) {
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
 //         const divRule = document.createElement('div');
+//         const num = document.createElement('div');
+//         num.innerText = `${i + 1}`;
+//         divRule.appendChild(num);
 //         div.appendChild(divRule);
 //         const divTitle = document.createElement('div');
-//         divTitle.innerText = rule.title;
+//         divTitle.innerText = element.title;
 //         divRule.appendChild(divTitle);
 //         const divBody = document.createElement('div');
-//         divBody.innerText = rule.body;                                 
+//         divBody.innerText = element.body;                                 
 //         divRule.appendChild(divBody);                                      
 //     }
 //     document.body.appendChild(div);
