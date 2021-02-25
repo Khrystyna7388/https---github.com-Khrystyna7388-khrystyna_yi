@@ -447,10 +447,10 @@
 //         age: 23,
 //         address: {
 //             city: 'Lviv',
-//             street: 'Naykova'                                                  ЗУПИНИТИ РЕКУРСІЮ
+//             street: 'Naykova'                                                 
 //         }
 //     }
-//     let copied = [];
+//     let copied = {};
 //     for (const key in native) {
 //         if (Object.hasOwnProperty.call(native, key)) {
 //             copied[key] = native[key];
