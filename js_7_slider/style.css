@@ -1,0 +1,150 @@
+.slider img {
+    width: 200px;
+    height: 200px;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+
+.wrapper {
+    height: 100%;
+    padding: 50px;
+}
+
+/* Слайдер */
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {}
+
+.slider {
+    position: relative;
+    padding: 0px 60px;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+    margin-top: -30px;
+}
+
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('img/arrow.png') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('img/arrow.png') 0 0 / 100% no-repeat;
+}
+
+/* Точки (булиты) */
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+/* Активная точка */
+.slider .slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* Элемент точки */
+.slider .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* Стрелка не активная */
+/* .slick-arrow.slick-disabled {
+    opacity: 0.2;
+} */
+/* cool centerMode:true */
+.slider-item {
+    transition: all 0.3s ease 0s;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.slider-item.slick-center{
+    opacity: 1;
+}
+
+.sliderbig img{
+    height: 500px;
+    width: 500px;
+}
+
+.sliderbig-item{
+    text-align: center;
+}
+
+.sliderbig .slick-arrow.slick-prev button{
+    display: none;
+}

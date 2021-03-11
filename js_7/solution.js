@@ -131,27 +131,22 @@
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
 //
-// const button = document.getElementsByTagName('button');
-//
-// button.onclick = () => {
-//     // const string = document.getElementById('string');
-//     // const column = document.getElementById('column');
-//     // const text = document.getElementById('text');
-//     const inputs = document.getElementsByTagName('input');
+// function buttonClick() {
+//     const inputs = document.getElementsByClassName('input');
 //     const string = inputs[0].value;
 //     const column = inputs[1].value;
 //     const text = inputs[2].value;
 //     const table = document.createElement('table');
 //     table.style.border = '1px solid black';
 //     table.style.borderCollapse = 'collapse';
-//     for (let i = 0; i < string; i++) {
+//     for (let i = 0; i < string.value; i++) {
 //         const tr = document.createElement('tr');
 //         tr.style.border = '1px solid black';
 //         table.appendChild(tr);
-//         for (let i = 0; i < column; i++) {
+//         for (let i = 0; i < column.value; i++) {
 //             const td = document.createElement('td');
 //             td.style.border = '1px solid black';
-//             td.innerText = text;
+//             td.innerText = text.value;
 //             table.appendChild(td);
 //         }
 //     }

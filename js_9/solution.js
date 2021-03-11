@@ -12,26 +12,27 @@
 // о (затримка 1)
 //
 //
-const button = document.getElementById('button');
-const input = document.getElementById('input');
-const letter = document.createElement('p');
-document.body.appendChild(letter);
+// const button = document.getElementById('button');
+// const input = document.getElementById('input');
+// const letter = document.createElement('p');
+// document.body.appendChild(letter);
 
-function print(x) {
-    return new Promise(resolve => {
-        setTimeout(() => resolve(x), Math.floor(Math.random() * 1000) + 100);
-    })
-}
+// function print(x) {
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve(x), Math.floor(Math.random() * 1000) + 100);
+//     })
+// }
 
-button.onclick = async function () {
-    for (let i = 0; i < input.value.length; i++) {
-    await print(input.value[i])
-        .then(value => {
-            console.log(value);  
-            letter.innerText += value;          
-        })
-    }      
-}
+// button.onclick = async function () {
+//     for (let i = 0; i < input.value.length; i++) {
+//     await print(input.value[i])
+//         .then(value => {
+//             console.log(value);  
+//             if(input.value)
+//             letter.innerText += value;          
+//         })
+//     }      
+// }
 // //
 // -за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users.
 //  За допомогою document.createElement вивести їх в браузер. 
