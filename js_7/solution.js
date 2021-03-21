@@ -139,20 +139,221 @@
 //     const table = document.createElement('table');
 //     table.style.border = '1px solid black';
 //     table.style.borderCollapse = 'collapse';
-//     for (let i = 0; i < string.value; i++) {
+//     for (let i = 0; i < string; i++) {
 //         const tr = document.createElement('tr');
 //         tr.style.border = '1px solid black';
 //         table.appendChild(tr);
-//         for (let i = 0; i < column.value; i++) {
+//         for (let i = 0; i < column; i++) {
 //             const td = document.createElement('td');
 //             td.style.border = '1px solid black';
-//             td.innerText = text.value;
+//             td.innerText = text;
 //             table.appendChild(td);
 //         }
 //     }
 //     document.body.appendChild(table);
 // }
+// //
+// - Сворити масив не цензцрних слів.
+// Сворити інпут текстового типу.
+// Якщо людина вводить слово і воно міститься в масиві не цензурних слів
+// кинути алерт з попередженням.
+// Перевірку робити при натисканні на кнопку
+
+// let words = ['shit', 'suck', 'bitch', 'fuck', 'dump'];
+
+// const button = document.getElementById('button');
+
+// button.onclick = () => {
+//     const input = document.getElementById('word');
+//     for (const word of words) {
+//         if(word === input.value){
+//             alert('bad guy');
+//         }
+//     }
+// }
 //
-// - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
 
+// - Сворити масив не цензцрних слів.
+// Сворити інпут текстового типу.
+// Потрібно перевіряти чи не містить ціле речення в собі погані слова.
+// Кинути алерт з попередженням у випадку якщо містить.
+// Перевірку робити при натисканні на кнопку
 
+// let words = ['shit', 'suck', 'bitch', 'fuck', 'dump'];
+
+// const button = document.getElementById('button');
+
+// button.onclick = () => {
+//     const input = document.getElementById('word');
+//     const sentence = input.value;
+//     for (const word of words) {
+//         if(sentence.includes(word)){
+//             alert('bad guy');
+//         }
+//     }
+// }
+//
+// -- взять массив пользователей
+// Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать как вместе так и по отдельности.
+// 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
+// 2й - оставляет старше 29 лет включительно
+// 3й - оставляет тех у кого город киев
+// Данные выводить в документ
+//
+// let usersWithAddress = [{
+//         id: 1,
+//         name: 'vasya',
+//         age: 31,
+//         status: false,
+//         address: {
+//             city: 'Lviv',
+//             street: 'Shevchenko',
+//             number: 16
+//         }
+//     },
+//     {
+//         id: 2,
+//         name: 'petya',
+//         age: 30,
+//         status: true,
+//         address: {
+//             city: 'Kyiv',
+//             street: 'Shevchenko',
+//             number: 1
+//         }
+//     },
+//     {
+//         id: 3,
+//         name: 'kolya',
+//         age: 29,
+//         status: true,
+//         address: {
+//             city: 'Lviv',
+//             street: 'Shevchenko',
+//             number: 121
+//         }
+//     },
+//     {
+//         id: 4,
+//         name: 'olya',
+//         age: 28,
+//         status: false,
+//         address: {
+//             city: 'Ternopil',
+//             street: 'Shevchenko',
+//             number: 90
+//         }
+//     },
+//     {
+//         id: 5,
+//         name: 'max',
+//         age: 30,
+//         status: true,
+//         address: {
+//             city: 'Lviv',
+//             street: 'Shevchenko',
+//             number: 115
+//         }
+//     },
+//     {
+//         id: 6,
+//         name: 'anya',
+//         age: 31,
+//         status: false,
+//         address: {
+//             city: 'Kyiv',
+//             street: 'Shevchenko',
+//             number: 2
+//         }
+//     },
+//     {
+//         id: 7,
+//         name: 'oleg',
+//         age: 28,
+//         status: false,
+//         address: {
+//             city: 'Ternopil',
+//             street: 'Shevchenko',
+//             number: 22
+//         }
+//     },
+//     {
+//         id: 8,
+//         name: 'andrey',
+//         age: 29,
+//         status: true,
+//         address: {
+//             city: 'Lviv',
+//             street: 'Shevchenko',
+//             number: 43
+//         }
+//     },
+//     {
+//         id: 9,
+//         name: 'masha',
+//         age: 30,
+//         status: true,
+//         address: {
+//             city: 'Kyiv',
+//             street: 'Shevchenko',
+//             number: 12
+//         }
+//     },
+//     {
+//         id: 10,
+//         name: 'olya',
+//         age: 31,
+//         status: false,
+//         address: {
+//             city: 'Lviv',
+//             street: 'Shevchenko',
+//             number: 16
+//         }
+//     },
+//     {
+//         id: 11,
+//         name: 'max',
+//         age: 31,
+//         status: true,
+//         address: {
+//             city: 'Ternopil',
+//             street: 'Shevchenko',
+//             number: 121
+//         }
+//     }
+// ];
+
+// const button1 = document.getElementById('falseUsers');
+// const button2 = document.getElementById('older');
+// const button3 = document.getElementById('city');
+
+// button1.onclick = () => {
+//     usersWithAddress.filter(user => {
+//         if (user.status === false) {
+//             const div = document.createElement('div');
+//             div.innerText = `${user.id} ${user.name} ${user.age} ${user.status} ${user.address.city} ${user.address.street} ${user.address.number}`;
+//             document.body.appendChild(div);
+//         }
+//     });
+// }
+
+// button2.addEventListener('click', function () {
+//     usersWithAddress.forEach(user => {
+//         if (user.age >= 29) {
+//             const div = document.createElement('div');
+//             div.innerText = `${user.id} ${user.name} ${user.age} ${user.status} ${user.address.city} ${user.address.street} ${user.address.number}`;
+//             document.body.appendChild(div);
+//         }
+//     })
+// })
+
+// button3.onclick = () => {
+//     usersWithAddress.filter(user => {
+//         if (user.address.city === 'Kyiv') {
+//             const div = document.createElement('div');
+//             div.innerText = `${user.id} ${user.name} ${user.age} ${user.status} ${user.address.city} ${user.address.street} ${user.address.number}`;
+//             document.body.appendChild(div);
+//         }
+//     })
+// }
+//

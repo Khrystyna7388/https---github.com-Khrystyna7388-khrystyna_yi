@@ -428,14 +428,15 @@
 //     let res = n / 2;
 //     if (res == 1) {
 //         console.log('yes');
-//     } else {                      
-//         if (res < 2) {
-//             console.log('no');
-//         }
-//         two(res);                            
+//         return;
 //     }
+//     if (res < 2) {
+//         console.log('no');
+//         return;
+//     }
+//     two(res);
 // }
-// two(8);
+// two(32);
 //
 //
 //
